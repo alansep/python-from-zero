@@ -1,0 +1,30 @@
+2026-09-29 08:00:01 INFO aplicação iniciada na porta 8080
+2026-09-29 08:00:02 INFO carregando configurações de produção
+2026-09-29 08:00:05 INFO conexão com o banco de dados estabelecida
+2026-09-29 08:01:12 INFO usuário isaque fez login
+2026-09-29 08:02:30 WARN cache frio: taxa de acerto abaixo de 70%
+2026-09-29 08:03:44 INFO pedido 1001 criado
+2026-09-29 08:04:10 ERROR timeout ao chamar o serviço de pagamento
+2026-09-29 08:04:11 WARN reprocessando pedido 1001 (tentativa 1)
+2026-09-29 08:04:15 INFO pagamento do pedido 1001 aprovado
+2026-09-29 08:05:02 INFO rota GET /api/pedidos respondeu 200 em 45 ms
+2026-09-29 08:06:40 ERROR falha na autenticação: senha inválida para o usuário rafa
+2026-09-29 08:07:01 WARN uso de memória em 82% no servidor web1
+2026-09-29 08:08:19 INFO cache reconstruído em 320 ms
+2026-09-29 08:09:33 ERROR conexão recusada pelo banco de dados (host db-principal)
+2026-09-29 08:10:00 INFO sessão encerrada para o usuário ana
+2026-09-29 08:11:27 WARN fila de tarefas com 128 itens aguardando
+2026-09-29 08:12:04 ERROR pedido 1002 rejeitado: saldo insuficiente
+2026-09-29 08:13:15 INFO backup incremental concluído
+2026-09-29 08:14:48 WARN resposta lenta do serviço de frete: 1.8 s
+2026-09-29 08:15:09 ERROR erro 500 em GET /api/relatorios
+2026-09-29 08:16:22 INFO heartbeat do worker-2 registrado
+2026-09-29 08:17:55 ERROR arquivo de configuração config.yaml não encontrado
+2026-09-29 08:18:31 WARN certificado SSL expira em 14 dias
+2026-09-29 08:19:44 ERROR estouro de memória ao processar o relatório mensal
+2026-09-29 08:20:10 INFO logout do usuário isaque registrado
+2026-09-29 08:21:07 ERROR login inválido: usuário bloqueado após 5 tentativas
+2026-09-29 08:22:39 WARN depreciação: parâmetro "pagina" será removido
+2026-09-29 08:23:12 ERROR webhook de pagamento devolveu status 503
+--- aplicação reiniciada ---
+servidor reiniciado
