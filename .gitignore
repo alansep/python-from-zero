@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Arquivos gerados pelos menus dos projetos (Fase 4)
+fase-4-projetos/**/dados/

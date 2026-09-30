@@ -1,0 +1,45 @@
+name: validacao
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compilar todos os .py (sintaxe)
+        run: python -m compileall -q fase-1-fundamentos fase-2-estruturas-dados fase-3-modularizacao fase-4-projetos
+
+      - name: Atividades no estado inicial devem falhar com resumo (sem crash)
+        run: |
+          falhou=0
+          for a in $(find fase-* -name atividade.py | sort); do
+            if [[ "$a" == *"00-setup"* ]]; then
+              code=0
+              python "$a" </dev/null >/dev/null 2>&1 || code=$?
+              if [[ $code -ne 0 ]]; then
+                echo "❌ $a deveria sair com 0 (exit=$code)"
+                falhou=1
+              else
+                echo "✅ $a (setup) roda sem erro"
+              fi
+              continue
+            fi
+            code=0
+            out=$(python "$a" </dev/null 2>&1) || code=$?
+            if [[ $code -ne 1 || "$out" != *"🔴"* || "$out" == *"Traceback"* ]]; then
+              echo "❌ $a → exit=$code (esperado: 1 com 🔴 e sem Traceback)"
+              echo "$out"
+              falhou=1
+            else
+              echo "✅ $a falhou graciosamente (como esperado)"
+            fi
+          done
+          exit $falhou

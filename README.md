@@ -84,7 +84,7 @@ python-from-zero/
 ---
 
 ### Fase 2 — Estruturas de Dados e Manipulação
-*Meta: organizar e manipular coleções de dados na memória.* **⏱️ ~10h** *(pasta em construção)*
+*Meta: organizar e manipular coleções de dados na memória.* **⏱️ ~10h**
 
 #### [1. Listas](./fase-2-estruturas-dados/) — 4h
 - [ ] 1.1 Indexação, fatiamento (*slicing*) e mutabilidade — 2h
@@ -105,7 +105,7 @@ python-from-zero/
 ---
 
 ### Fase 3 — Modularização, Algoritmos e Depuração
-*Meta: sair dos scripts lineares, escrever código sustentável e achar bugs sozinho.* **⏱️ ~15h** *(pasta em construção)*
+*Meta: sair dos scripts lineares, escrever código sustentável e achar bugs sozinho.* **⏱️ ~15h**
 
 #### [1. Funções e Escopo](./fase-3-modularizacao/) — 3h
 - [ ] 1.1 `def`, parâmetros, argumentos padrão e `return` — 2h
@@ -131,7 +131,7 @@ python-from-zero/
 ---
 
 ### Fase 4 — Transição para Desenvolvedor (Projetos Práticos)
-*Meta: consolidar a lógica construindo sem depender do autocompletar da IA.* **⏱️ ~18h** *(pasta em construção)*
+*Meta: consolidar a lógica construindo sem depender do autocompletar da IA.* **⏱️ ~18h**
 
 - [ ] **Projeto 1 — Validador de regras de negócio:** simulador bancário de terminal (depósito, saque, extrato, saldo e limites) — 5h
 - [ ] **Projeto 2 — Gerenciador de dados estruturados:** cadastro/consulta com dicionários + persistência em `.json`/`.csv` — 6h
