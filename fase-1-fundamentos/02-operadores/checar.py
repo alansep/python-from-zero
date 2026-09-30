@@ -23,6 +23,7 @@ def validar(
     nao_logico,
     expressao,
     divisivel_3_e_5,
+    previsao_saida,
 ):
     print("\n── Atividade 02 · Operadores ──")
     falhas = 0
@@ -53,6 +54,11 @@ def validar(
 
     # ---------- Exercício 4 — lógica combinada ----------
     check("45 é divisível por 3 e 5 → True", divisivel_3_e_5 is True)
+
+    # ---------- Exercício 5 — previsão de saída ----------
+    esperado = ["11", "3", "1"]
+    obtido = [linha.strip() for linha in str(previsao_saida()).strip().splitlines() if linha.strip()]
+    check("previsão de saída correta (leitura no papel)", obtido == esperado)
 
     if falhas:
         print(f"\n  🔴 {falhas} verificação(ões) falhou(aram). Corrija e rode de novo.\n")

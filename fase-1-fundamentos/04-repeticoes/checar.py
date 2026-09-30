@@ -6,7 +6,7 @@ Você não precisa editar este arquivo (mas pode ler — é só Python 😉).
 import sys
 
 
-def validar(*, soma_ate, contar_divisiveis, soma_pares_ate, contar_antes_do_sete):
+def validar(*, soma_ate, contar_divisiveis, soma_pares_ate, contar_antes_do_sete, previsao_saida):
     print("\n── Atividade 04 · Estruturas de Repetição ──")
     falhas = 0
 
@@ -54,6 +54,11 @@ def validar(*, soma_ate, contar_divisiveis, soma_pares_ate, contar_antes_do_sete
             f"contar_antes_do_sete({limite}) → {esperado}",
             erro is None and valor == esperado,
         )
+
+    # ---------- Exercício 5 — previsão de saída ----------
+    esperado = ["4"]
+    obtido = [linha.strip() for linha in str(previsao_saida()).strip().splitlines() if linha.strip()]
+    check("previsão de saída correta (leitura no papel)", obtido == esperado)
 
     if falhas:
         print(f"\n  🔴 {falhas} verificação(ões) falhou(aram). Corrija e rode de novo.\n")

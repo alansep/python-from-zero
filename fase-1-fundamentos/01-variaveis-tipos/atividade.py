@@ -37,7 +37,7 @@ esta_ativo = None
 # ============================================================
 def pedir_dados():
     # TODO: implemente (2 inputs + 1 conversão + 1 return)
-    return ("", 0)
+    return ("", None)
 
 
 # ============================================================
@@ -53,6 +53,22 @@ def apresentar(nome, idade):
 
 
 # ============================================================
+# EXERCÍCIO 4 — Previsão de saída (sem rodar!)
+# ------------------------------------------------------------
+# Leia o código abaixo NO PAPEL e devolva EXATAMENTE o que ele
+# imprime, usando \n para as quebras de linha:
+#
+#   nome = "isaque"
+#   idade = 30
+#   print("Olá,", nome)
+#   print("ano:", idade + 1)
+# ============================================================
+def previsao_saida():
+    # TODO: escreva a saída esperada como texto
+    return ""
+
+
+# ============================================================
 # VALIDAÇÃO — não altere nada abaixo desta linha
 # ============================================================
 from checar import validar
@@ -64,4 +80,5 @@ validar(
     esta_ativo=esta_ativo,
     pedir_dados=pedir_dados,
     apresentar=apresentar,
+    previsao_saida=previsao_saida,
 )

@@ -73,16 +73,46 @@ Com `x = 10`, `y = 4`:
 
 ## ✍️ Exercícios
 
-Abra [`atividade.py`](./atividade.py) — são 4 exercícios:
+Abra [`atividade.py`](./atividade.py) — são 5 exercícios:
 
 1. **Aritmética** — complete 5 variáveis usando `a` e `b` (não hardcode o resultado!).
 2. **Comparações e lógicos** — complete 6 booleanos com `x` e `y`.
 3. **Precedência** — monte **sem parênteses** a expressão *"2 mais 3 vezes 4 ao quadrado menos 1"*. **Calcule no papel antes de rodar!** Esperado: `49`.
 4. **Lógica combinada** — `True` se `numero` for divisível por 3 **E** por 5.
+5. **Previsão de saída** — leia um trecho de código **no papel** e devolva a saída exata (dry-run).
 
 ```bash
 python3 fase-1-fundamentos/02-operadores/atividade.py
 ```
+
+---
+
+## 💡 Dicas (progressivas — sem gabarito)
+
+**Exercício 1**
+1. `17 / 5` não dá 3 — qual operador corta a parte decimal?
+2. `//` e `%` andam juntos: `a == (a // b) * b + (a % b)`.
+3. Monte cada linha com os operandos `a` e `b` — nunca digite o resultado na mão.
+
+**Exercício 2**
+1. Comece pelas comparações: elas já devolvem `True`/`False` antes do `and`/`or`.
+2. `and` exige os DOIS lados `True`; `or` aceita UM.
+3. `not` inverte o valor — use parênteses para não se perder na leitura.
+
+**Exercício 3**
+1. Reescreva primeiro com parênteses exagerados e depois remova-os.
+2. Potência antes de multiplicação; multiplicação antes de soma.
+3. Ordem de pensar: `4²`, depois `3 ×`, depois `2 +` e o `-1` por último.
+
+**Exercício 4**
+1. "Divisível" quer dizer: qual comparação com o resto?
+2. Os restos de `45 ÷ 3` e de `45 ÷ 5` precisam ser zero **ao mesmo tempo**.
+3. Um único `and` entre duas comparações resolve.
+
+**Previsão de saída**
+1. Aplique a precedência: quem resolve primeiro, `+` ou `*`?
+2. `//` descarta a fração; `%` devolve só o resto.
+3. Anote o resultado de cada `print` em uma linha — a resposta é um texto com 3 linhas.
 
 ## 🚀 Desafios extras
 

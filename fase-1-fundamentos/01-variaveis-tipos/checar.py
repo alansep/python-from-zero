@@ -6,7 +6,7 @@ Você não precisa editar este arquivo (mas pode ler — é só Python 😉).
 import sys
 
 
-def validar(*, usuario, idade, altura, esta_ativo, pedir_dados, apresentar):
+def validar(*, usuario, idade, altura, esta_ativo, pedir_dados, apresentar, previsao_saida):
     print("\n── Atividade 01 · Variáveis e Tipos de Dados ──")
     falhas = 0
 
@@ -53,6 +53,11 @@ def validar(*, usuario, idade, altura, esta_ativo, pedir_dados, apresentar):
             check(f"apresentar('{nome_ex}', {idade_ex}) montou a frase", ok)
         except Exception as erro:
             check(f"apresentar('{nome_ex}', {idade_ex}) falhou ({erro})", False)
+
+    # ---------- Exercício 4 — previsão de saída ----------
+    esperado = ["Olá, isaque", "ano: 31"]
+    obtido = [linha.strip() for linha in str(previsao_saida()).strip().splitlines() if linha.strip()]
+    check("previsão de saída correta (leitura no papel)", obtido == esperado)
 
     _resumo(falhas)
 

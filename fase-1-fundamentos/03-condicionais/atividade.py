@@ -67,6 +67,25 @@ def calcular(a, operador, b):
 
 
 # ============================================================
+# EXERCÍCIO 5 — Previsão de saída (sem rodar!)
+# ------------------------------------------------------------
+# Leia o código abaixo NO PAPEL e devolva EXATAMENTE o que ele
+# imprime, usando \n para as quebras de linha:
+#
+#   x = 3
+#   if x > 5:
+#       print("A")
+#   elif x > 2:
+#       print("B")
+#   else:
+#       print("C")
+# ============================================================
+def previsao_saida():
+    # TODO: escreva a saída esperada como texto
+    return ""
+
+
+# ============================================================
 # VALIDAÇÃO — não altere nada abaixo desta linha
 # ============================================================
 from checar import validar
@@ -76,4 +95,5 @@ validar(
     pode_dirigir=pode_dirigir,
     situacao=situacao,
     calcular=calcular,
+    previsao_saida=previsao_saida,
 )

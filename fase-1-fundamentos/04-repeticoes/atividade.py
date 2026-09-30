@@ -63,6 +63,24 @@ def contar_antes_do_sete(limite):
 
 
 # ============================================================
+# EXERCÍCIO 5 — Previsão de saída (sem rodar!)
+# ------------------------------------------------------------
+# Leia o código abaixo NO PAPEL e devolva EXATAMENTE o que ele
+# imprime, usando \n para as quebras de linha:
+#
+#   total = 0
+#   for i in range(1, 5):
+#       if i % 2 == 0:
+#           continue
+#       total += i
+#   print(total)
+# ============================================================
+def previsao_saida():
+    # TODO: escreva a saída esperada como texto
+    return ""
+
+
+# ============================================================
 # VALIDAÇÃO — não altere nada abaixo desta linha
 # ============================================================
 from checar import validar
@@ -72,4 +90,5 @@ validar(
     contar_divisiveis=contar_divisiveis,
     soma_pares_ate=soma_pares_ate,
     contar_antes_do_sete=contar_antes_do_sete,
+    previsao_saida=previsao_saida,
 )

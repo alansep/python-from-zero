@@ -64,6 +64,23 @@ divisivel_3_e_5 = None
 
 
 # ============================================================
+# EXERCÍCIO 5 — Previsão de saída (sem rodar!)
+# ------------------------------------------------------------
+# Leia o código abaixo NO PAPEL e devolva EXATAMENTE o que ele
+# imprime, usando \n para as quebras de linha:
+#
+#   a = 7
+#   b = 2
+#   print(a + b * 2)
+#   print(a // b)
+#   print(a % b)
+# ============================================================
+def previsao_saida():
+    # TODO: escreva a saída esperada como texto
+    return ""
+
+
+# ============================================================
 # VALIDAÇÃO — não altere nada abaixo desta linha
 # ============================================================
 from checar import validar
@@ -84,4 +101,5 @@ validar(
     nao_logico=nao_logico,
     expressao=expressao,
     divisivel_3_e_5=divisivel_3_e_5,
+    previsao_saida=previsao_saida,
 )

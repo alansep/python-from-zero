@@ -64,17 +64,42 @@ nome = str(25)              # "25" (str)
 
 ## ✍️ Exercícios
 
-Abra [`atividade.py`](./atividade.py) — são 3 exercícios:
+Abra [`atividade.py`](./atividade.py) — são 4 exercícios:
 
 1. **Tipos primitivos** — declare 4 variáveis com os tipos corretos (`str`, `int`, `float`, `bool`).
 2. **Entrada + conversão** — pergunte nome e idade com `input()` e converta a idade para `int`.
 3. **Saída** — monte a frase `Olá, Ana! Você tem 25 anos.` usando **concatenação com `+`** e `str()` (sem f-string — ela é o desafio da Fase 2).
+4. **Previsão de saída** — leia um trecho de código **no papel** e devolva a saída exata (dry-run).
 
- rode no terminal:
+Rode no terminal:
 
 ```bash
 python3 fase-1-fundamentos/01-variaveis-tipos/atividade.py
 ```
+
+---
+
+## 💡 Dicas (progressivas — sem gabarito)
+
+**Exercício 1**
+1. Pense no dado real: seu nome é texto? sua idade tem parte decimal?
+2. `float` exige ponto (`1.75`); `bool` é `True`/`False` **sem aspas**.
+3. Confira com `print(type(variavel))` — se o tipo divergiu, o problema é no valor, não na verificação.
+
+**Exercício 2**
+1. O que `input()` devolve: número ou texto? O que acontece com `"25" + 1`?
+2. `int(...)` envolve a leitura — ou guarde o texto e converta na linha seguinte.
+3. O `return` leva dois valores separados por vírgula: `return nome, idade_int`.
+
+**Exercício 3**
+1. `+` cola texto com texto — e quando você tenta colar um `int`?
+2. Converta o número para texto antes de concatenar (`str(...)`).
+3. Monte em pedaços: saudação + nome + `! Você tem ` + idade + ` anos.` — depois junte tudo.
+
+**Previsão de saída**
+1. Execute linha a linha **na sua cabeça**, anotando o valor de cada variável.
+2. `print("Olá,", nome)` separa os argumentos com um espaço.
+3. São duas linhas de saída: uma dentro do texto, `\n` entre elas, a outra no fim.
 
 ## 🚀 Desafios extras (fora da validação)
 

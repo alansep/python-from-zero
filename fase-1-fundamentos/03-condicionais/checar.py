@@ -7,7 +7,7 @@ Inclui casos-limite de propósito: é assim que se testa código de verdade.
 import sys
 
 
-def validar(*, faixa_etaria, pode_dirigir, situacao, calcular):
+def validar(*, faixa_etaria, pode_dirigir, situacao, calcular, previsao_saida):
     print("\n── Atividade 03 · Estruturas Condicionais ──")
     falhas = 0
 
@@ -88,6 +88,11 @@ def validar(*, faixa_etaria, pode_dirigir, situacao, calcular):
             f"calcular({a}, '{operador}', {b}) → {esperado}",
             erro is None and valor == esperado,
         )
+
+    # ---------- Exercício 5 — previsão de saída ----------
+    esperado = ["B"]
+    obtido = [linha.strip() for linha in str(previsao_saida()).strip().splitlines() if linha.strip()]
+    check("previsão de saída correta (leitura no papel)", obtido == esperado)
 
     if falhas:
         print(f"\n  🔴 {falhas} verificação(ões) falhou(aram). Corrija e rode de novo.\n")
