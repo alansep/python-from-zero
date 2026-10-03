@@ -13,15 +13,15 @@ Sem validação automática aqui — a prova é a saída que você vê.
 
 # TODO 1: imprima uma saudação com o seu nome
 # Exemplo de saída esperada:  Olá, Isaque!
-print("TODO 1")
+print("Olá, Isaque!")
 
 # TODO 2: imprima o seu ano de nascimento COMO NÚMERO (sem aspas)
 # Exemplo de saída esperada:  1990
-print("TODO 2")
+print(2008)
 
 # TODO 3: imprima a frase exata abaixo (com aspas, porque é texto):
 #   Vou aprender Python em 2026
-print("TODO 3")
+print("Vou aprender Python em 2026")
 
 # ----------------------------------------------------------------------
 print("\n--- Fim da Atividade 00 ---")
